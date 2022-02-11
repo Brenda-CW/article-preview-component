@@ -179,7 +179,11 @@
     /* padding: 10px 40px 10px 10px; */
   }
 
-  .btn {
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .social--btn, .user--btn {
     background-color: hsl(210, 46%, 95%);
     border-radius: 50px;
     height: 35px;
@@ -188,11 +192,6 @@
     border: none;
     margin-top: 10px;
   }
-
- /*HOW TO RECOLOR THIS ICON???? */
-  /* .btn--color {
-      color: #fff;
-  } */
 
   /*Changes the background of the button for the active state */
   .btn--dark {
