@@ -116,7 +116,7 @@
 
   .text--special {
     text-transform: uppercase;
-    text-justify: distribute;
+    letter-spacing: 2px;
   }
 
   .container {
@@ -127,54 +127,48 @@
     text-align: left;
     border-radius: 20px;
     background-color: #fff;
-    margin: 100px 20px;
+    margin: 70px 20px;
+    overflow:hidden;
+    box-shadow: 0px 5px 10px hsl(212, 23%, 69%) ;
   }
 
   .image {
+    /* display: block; */
     border-radius: 10px 10x 0 0;
+    /* overflow: hidden; */
   }
 
   img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px 10x 0 0;
-  }
-
-  .image.large {
-
+    max-width: 100%;
+    height: auto;
   }
 
   .content {
     padding: 20px;
   }
 
-  .user--block {
+  .user {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 25px; 
+    height: 60px;
+  }
+
+  .user--bar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-content: space-between;
-    padding: 20px; 
+    align-items: center;
+    width: 70%;
   }
 
+  /*Avatar image*/
   .small {
       border-radius: 50px;
       height: 40px;
-      padding: 10px;
-  }
-
-  .btn {
-    background-color: hsl(210, 46%, 95%);
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-    padding: 0px;
-    border: none;
-    margin-top: 10px;
-  }
-
- /*HOW TO RECOLOR THIS ICON???? */
-  .btn--color {
-      color: #fff;
+      margin-right: 15px;
   }
 
   .user--details {
@@ -182,29 +176,65 @@
     flex-flow: column;
     justify-content: flex-start;
     text-align: left;
-    padding: 10px 40px 10px 10px;
+    /* padding: 10px 40px 10px 10px; */
+  }
+
+  .btn {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    /* padding: 0px; */
+    border: none;
+    margin-top: 10px;
+  }
+
+ /*HOW TO RECOLOR THIS ICON???? */
+  /* .btn--color {
+      color: #fff;
+  } */
+
+  /*Changes the background of the button for the active state */
+  .btn--dark {
+    background-color: hsl(214, 17%, 51%);
+    padding: -5px;
+  }
+
+  /* Changes the color of the button for the active state */
+  .btn--light {
+    filter: brightness(100);
   }
 
   .social {
-    color: hsl(210, 46%, 95%);
+    color: hsl(212, 23%, 69%);
     background-color: hsl(217, 19%, 35%);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    height: 65px;
-    border-radius: 0 0 10px 10px;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 60px;
+    padding: 25px;
+    /* border-radius: 0 0 10px 10px; */
   }
 
-  .icons {
+  .social--bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 70%;
+  }
+  /* .icons {
       flex: 1;
-  }
-
-  /* .hide{
-    display:none;
+      max-width: 20%;
   } */
 
+  .hide{
+    display:none;
+  }
   
+  .show {
+    display: block;
+  }
 
   /************** FOOTER STYLES ****************/
   .attribution { 
