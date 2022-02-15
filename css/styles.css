@@ -10,6 +10,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+  * {
+    box-sizing: border-box;
+  }
 
    html {
     color: #222;
@@ -123,7 +126,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: left;
     border-radius: 20px;
     background-color: #fff;
@@ -133,26 +136,25 @@
   }
 
   .image {
-    /* display: block; */
-    border-radius: 10px 10x 0 0;
-    /* overflow: hidden; */
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    width: 100%;
+    overflow: hidden;
   }
 
   .content {
-    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
   }
 
   .user {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-content: center;
-    padding: 25px; 
+    align-items: center;
+    padding: 0px 25px 40px; 
     height: 60px;
   }
 
@@ -165,7 +167,7 @@
   }
 
   /*Avatar image*/
-  .small {
+  .avatar {
       border-radius: 50px;
       height: 40px;
       margin-right: 15px;
@@ -179,10 +181,6 @@
     /* padding: 10px 40px 10px 10px; */
   }
 
-  .btn:hover {
-    cursor: pointer;
-  }
-
   .social--btn, .user--btn {
     background-color: hsl(210, 46%, 95%);
     border-radius: 50px;
@@ -190,7 +188,7 @@
     width: 35px;
     /* padding: 0px; */
     border: none;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 
   /*Changes the background of the button for the active state */
@@ -200,7 +198,7 @@
   }
 
   /* Changes the color of the button for the active state */
-  .btn--light {
+  .img--light {
     filter: brightness(100);
   }
 
@@ -211,9 +209,9 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: baseline;
-    height: 60px;
-    padding: 25px;
+    /* height: 60px; */
     /* border-radius: 0 0 10px 10px; */
+    padding: 20px 25px 40px;
   }
 
   .social--bar {
@@ -221,6 +219,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 70%;
+    /* padding: 25px; */
   }
   /* .icons {
       flex: 1;
@@ -247,13 +246,114 @@
     /* =========================================
             TABLET STYLES
     ==========================================*/
+      @media only screen and (min-width: 768px) {
 
+        .container {
+          margin: 80px 40px;
+        }
+
+        .image {
+          margin: 30px;
+        }
+
+        .bottom_right {
+          width: 100%;
+        }
+        
+        .content {
+          margin: 0px auto;
+          max-width: 660px;
+        }
+
+        .user {
+          margin: 15px auto;
+          max-width: 660px;
+        }
+
+        .social {
+          /* padding: 20px 30px; */
+        }
+
+        .social--bar {
+          width: 40%;
+        }
+      }   /*CLOSE TO TABLET STYLES */
 
 
     /* =========================================
             DESKTOP STYLES
     ==========================================*/
+      @media only screen and (min-width: 1200px) {
 
+        h2 {
+          font-size: 1.75em;
+        }
+
+        h4 {
+          font-size: 1.25em;
+        }
+
+        p {
+          font-size: 1.05em;
+        }
+
+        .container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: flex-end;
+          margin: 260px auto;  
+          max-width: 800px;
+          max-height: 400px;
+        } 
+
+        .top_left {
+          width: 40%;
+        }
+
+        .bottom_right {
+          display: flex;
+          justify-content: space-evenly;
+          flex-flow: column nowrap;
+          align-items: center;
+          width: 100%;
+        }
+
+        .image {
+          margin: 0;
+          /* width: 40%; */
+          object-fit: contain;
+        }
+
+        /* img {
+          max-width: 120%;
+          height: auto;
+        } */
+
+        .content {
+          width: 87%;
+          margin: 0 25px;
+          padding: 0;
+        }
+
+        .btn:hover {
+          cursor: pointer;
+
+        }
+
+        .user, .social {
+          height: 100%;
+        }
+
+        .user {
+          padding: 20px 50px 0px 25px;
+        }
+
+        footer {
+          width: 100%;
+        }
+      
+      }   /*CLOSE TO DESKTOP STYLES */
 
 
 

@@ -14,48 +14,52 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <main class="container">
-    <div class="image"><img src="./images/drawers.jpg" /></div> 
-    
-    <div class="content">
-      <h2>Shift the overall look and feel by adding these wonderful 
-        touches to furniture in your home</h2>
-    
-      <p>Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I've got some simple tips 
-        to help you make any room feel complete.</p>
+    <div class="top_left">
+      <div class="image"><img src="./images/drawers.jpg" alt=""/></div> 
     </div>
     
-    <footer>
-      <div  class="show">
-        <div class="user" >
-          <div class="user--bar">
-            <img src="./images/avatar-michelle.jpg" class="small"/>
-            <div class="user--details">
-              <h4>Michelle Appleton</h4>
-              <p class="text--adjacent">28 Jun 2020</p>
-            </div>
-          </div>
-          <button id="share--btn" class="btn social--btn"><img src="./images/icon-share.svg"/></button>
-        </div>
+    <div class="bottom_right">
+      <div class="content">
+        <h2>Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h2>
+      
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I've got some simple tips 
+          to help you make any room feel complete.</p>
       </div>
       
-    
-      <div class="social hide">
-        <div class="social--bar">
-          <span class="text--special icons">Share</span>
-          <img src="./images/icon-facebook.svg" class="icons"/> 
-          <img src="./images/icon-twitter.svg" class="icons"/> 
-          <img src="./images/icon-pinterest.svg" class="icons"/> 
+      <footer>
+        <div  class="show">
+          <div class="user" >
+            <div class="user--bar">
+              <img src="./images/avatar-michelle.jpg" class="avatar" alt="avatar"/>
+              <div class="user--details">
+                <h4>Michelle Appleton</h4>
+                <p class="text--adjacent">28 Jun 2020</p>
+              </div>
+            </div>
+            <button id="share--btn" class="btn social--btn"><img src="./images/icon-share.svg" alt="open sharing options"/></button> 
+            <!-- add btn--dark & img--light class when social div is active  -->
+          </div>
         </div>
-        <button class="btn user--btn btn--dark"><img src="./images/icon-share.svg" class="btn--light"/></button>
-      </div>
-  </footer>
-    
+        
+      
+        <div class="social hide">
+          <div class="social--bar">
+            <span class="text--special icons">Share</span>
+            <img src="./images/icon-facebook.svg" class="icons" alt="facebook icon"/> 
+            <img src="./images/icon-twitter.svg" class="icons" alt="twitter icon"/> 
+            <img src="./images/icon-pinterest.svg" class="icons" alt="pinterest icon"/> 
+          </div>
+          <button class="btn user--btn btn--dark"><img src="./images/icon-share.svg" class="img--light" alt="close sharing options"/></button>
+        </div>
+      </footer>
+    </div>
   </main>
   
   
